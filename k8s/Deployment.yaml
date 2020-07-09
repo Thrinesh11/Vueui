@@ -1,0 +1,16 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: Chatbot-Atos
+spec:
+  selector:
+    matchLabels:
+      app: Chatbot-Atos
+  template:
+    metadata:
+      labels:
+        app: Chatbot-Atos
+    spec:
+      containers:
+      - name: Chatbot-Atos
+        image: 

@@ -1,0 +1,11 @@
+apiVersion: v2
+kind: Service
+metadata:
+  name: Chatbot-Atos
+spec:
+  selector:
+    app: Chatbot-Atos
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
